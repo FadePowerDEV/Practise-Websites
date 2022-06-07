@@ -1,0 +1,50 @@
+h1 {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  font-family: "Blaka", cursive;
+  font-size: 3cm;
+  color: #fcfcfc;
+  text-shadow: 4px 5px #f30101;
+}
+
+h2 {
+  font-size: 2cm;
+  display: flex;
+  margin-top: 1cm;
+  color: #fcfcfc;
+  text-shadow: 3px 3px #f30101;
+  margin-left: 1cm;
+  font-family: "Blaka", cursive;
+}
+
+h3 {
+  font-size: 1.3cm;
+  display: flex;
+  margin-top: 1cm;
+  color: #fcfcfc;
+  text-shadow: 3px 3px #f30101;
+  margin-left: 1cm;
+  font-family: "Blaka", cursive;
+}
+
+li {
+  letter-spacing: 3px;
+  margin: 20px;
+  color: white;
+  margin-left: 1cm;
+
+  font-family: "Abril Fatface", cursive;
+}
+
+
+#ollievideo {
+
+  margin-left: 5cm;
+
+
+}

@@ -1,0 +1,157 @@
+.header img {
+  width: 180px;
+  height: 130px;
+  float: left;
+  margin-left: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  background: #202020;
+}
+ul {
+  margin-top: 0.9cm;
+}
+.header li {
+  padding: 10px 10px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #f8f8f8;
+  min-width: 80px;
+  margin: auto;
+  float: right;
+  text-shadow: 2px 2px #f30101;
+}
+
+.header li:hover {
+  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-size: 100% 100%;
+  color: #fdfdfd;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #f72f07;
+  font-weight: bold;
+}
+.header li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.title h1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  font-family: "Blaka", cursive;
+  font-size: 3cm;
+  color: #fcfcfc;
+  text-shadow: 4px 5px #f30101;
+}
+
+.first .sec body {
+  height: 100vh;
+  background: #19092d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 20px;
+  width: 25%;
+  margin-top: 4cm;
+  height: 100px;
+  color: white;
+  font-family: "Blaka", cursive;
+  text-shadow: 2px 2px #f30101;
+  font-size: 30px;
+  cursor: pointer;
+  
+
+
+}
+
+/* PIERWSZY SPOSOB WYKORZYSTANIE CIENIA */
+.first {
+  background: #c0c0c0;
+  box-shadow: inset 0px 0px 0px 0px #0c0c0c;
+  transition: all 0.5s ease-in-out;
+  
+}
+.first:hover {
+  box-shadow: inset 0px -200px 0px 0px #050505;
+}
+
+/* DRUGI SPOSOB DLUZSZY ALE BARDZIEJ UNIWERSALNY*/
+.sec {
+  background: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec:before,
+.sec:after {
+  content: "";
+  background: #c0c0c0;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.sec:after {
+  background: #000000;
+  top: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.sec:hover:after {
+  top: 0;
+}
+
+.container {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background: #202020;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
